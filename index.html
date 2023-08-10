@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<!--
+    sonderzeichen
+    https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+    √ ÷ ⅟
+
+✈
+
+-->
+<div class="calculator-grid">
+    <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+    </div>
+    <button class="span-three other" data-all-clear>AC</button>
+    <button class="span-two other" data-delete>DEL</button>
+    <button class="number" data-number>1</button>
+    <button class="number" data-number>2</button>
+    <button class="number" data-number>3</button>
+    <button class="span-two number"></button>
+<!--    <button class="operator" data-operation>√</button>-->
+    <button class="number" data-number>4</button>
+    <button class="number" data-number>5</button>
+    <button class="number" data-number>6</button>
+    <button class="operator" data-operation>*</button>
+    <button class="operator" data-operation>÷</button>
+    <button class="number" data-number>7</button>
+    <button class="number" data-number>8</button>
+    <button class="number" data-number>9</button>
+    <button class="operator" data-operation>+</button>
+    <button class="operator" data-operation>-</button>
+    <button class="number" data-number>.</button>
+    <button class="number" data-number>0</button>
+    <button class="operator" data-operation>(-)</button>
+    <button class="span-two other" id="operator_equal" data-equals>=</button>
+</div>
+
+</body>
+</html>
